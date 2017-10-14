@@ -1,0 +1,86 @@
+<HTML>
+<BODY>
+<div style="padding:0;max-width:700px;">
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+            <td align="left" style="padding:10px 0 15px 0;">
+                <img border="0" title="Recyclothes" width="139" height="90"
+                     src="www.recyclothes.cl/img/caprichitos2.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" style="border-top:solid 1px #e8e8e8;display:block;"/>
+        </tr>
+        <tr>
+            <td height="15" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td style="font-family:Arial;font-size:20px;color:#468847;font-weight:normal;">
+                Nombre $nombreContacto
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:Arial;font-size:20px;color:#468847;font-weight:normal;">
+                Correo : $correoContacto
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:Arial;font-size:20px;color:#468847;font-weight:normal;">
+                Asunto : $asuntoContacto
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td height="10" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td height="25" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr style="display:block;padding:5px 0;">
+            <td valign="top" width="120"
+                style="font-family:Arial;font-size:14px;color:#666666;border-top:solid 1px #dddddd;padding:5px 0;">
+                Mensaje:
+            </td>
+            <td valign="top"
+                style="font-family:Arial;font-size:14px;color:#b22c00;border-top:solid 1px #dddddd;padding:5px 0;">
+                &nbsp;&nbsp;$mensajeContacto
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;">
+                www.recyclothes.cl - Recyclothes@
+            </td>
+        </tr>
+        <tr>
+            <td height="25" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</BODY>
+</HTML>

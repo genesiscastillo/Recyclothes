@@ -1,0 +1,5 @@
+.bar-chart
+{
+    -fx-bar-gap: 0;
+    -fx-category-gap: 20;
+}

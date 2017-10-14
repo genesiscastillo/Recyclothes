@@ -1,0 +1,56 @@
+<script>
+    $(document).ready(function () {
+        $('#id-comp-btn-reservar-productoDTO').click(function () {
+            reservarProducto();
+        });
+        function reservarProducto( ) {
+            var idProducto = $('#id-text-idProducto').text().substring(1);
+            $('#modal-descripcion-productoDTO').modal('hide');
+            //$('#panelModal').html('');
+            var tabCatalogo = $('#tabCatalogo').val();
+            var productoDTO = {
+                action: 'RESERVAR_PRODUCTO',
+                tabCatalogo: tabCatalogo ,
+                idProducto : idProducto
+            };
+            console.log('productoDTO.action    = '+productoDTO.action);
+            console.log('productoDTO.tipo      = '+productoDTO.tipo);
+            console.log('productoDTO.talla     = '+productoDTO.idProducto);
+
+            socket.send(JSON.stringify(productoDTO));
+        }
+    });
+</script>
+<a data-toggle="modal" href="#modal-descripcion-productoDTO" id="id-comp-modal-descripcion-productoDTO" />
+<div class="modal" id="modal-descripcion-productoDTO">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                <h4 class="modal-title">
+                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">&nbsp;&nbsp;</span><strong id="id-text-idProducto"></strong>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="#">
+                            <img src="img/ropa1.jpg" style="position: relative">
+                        </a>
+                    </div>
+                    <div class="col-lg-8" >
+                        <h2 class="classTituloProducto" style="text-align: right" id="id-text-titulo"></h2>
+                        <br/>
+                        <p class="classTallaProducto" style="text-align: right" id="id-text-talla"></p>
+                        <p class="classDetalleProducto" style="text-align: right" id="id-text-descripcion" ></p>
+                        <p class="classPrecioProducto" style="text-align: right" id="id-text-precio"><span>$</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" id="id-comp-btn-reservar-productoDTO" >Reservar Ahora!</button>
+            </div>
+        </div>
+    </div>
+</div>

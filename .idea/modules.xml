@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ROOT/ROOT.iml" filepath="$PROJECT_DIR$/ROOT/ROOT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recyclothes.iml" filepath="$PROJECT_DIR$/Recyclothes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP.iml" filepath="$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-common/RecyclothesAPP-common.iml" filepath="$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-common/RecyclothesAPP-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-dao/RecyclothesAPP-dao.iml" filepath="$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-dao/RecyclothesAPP-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-fx/RecyclothesAPP-fx.iml" filepath="$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-fx/RecyclothesAPP-fx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-nio/RecyclothesAPP-nio.iml" filepath="$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-nio/RecyclothesAPP-nio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-wsocketclient/RecyclothesAPP-wsocketclient.iml" filepath="$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-wsocketclient/RecyclothesAPP-wsocketclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclothesDB/RecyclothesDB.iml" filepath="$PROJECT_DIR$/RecyclothesDB/RecyclothesDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR.iml" filepath="$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-dao/RecyclothesEAR-dao.iml" filepath="$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-dao/RecyclothesEAR-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-ear/RecyclothesEAR-ear.iml" filepath="$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-ear/RecyclothesEAR-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-web/RecyclothesEAR-web.iml" filepath="$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-web/RecyclothesEAR-web.iml" />
+    </modules>
+  </component>
+</project>

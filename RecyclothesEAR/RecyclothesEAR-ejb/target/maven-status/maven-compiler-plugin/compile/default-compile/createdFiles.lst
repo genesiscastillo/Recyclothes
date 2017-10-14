@@ -1,0 +1,7 @@
+com\recyclothes\service\DetalleReservaEJBBean.class
+com\recyclothes\service\ReservaEJBBean.class
+com\recyclothes\service\ClienteEJBBean.class
+com\recyclothes\service\ActualizacionAccesoEJBBean.class
+com\recyclothes\service\FotoProductoEJBBean.class
+com\recyclothes\transformation\Translation.class
+com\recyclothes\service\ProductosEJBBean.class

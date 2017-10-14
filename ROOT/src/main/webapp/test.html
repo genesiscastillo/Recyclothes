@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+    var websocket = new WebSocket("ws://web-babycaprichitos.rhcloud.com:8000/RecyclothesEAR-web/clienteWebSocket");
+    websocket.onopen = function(event) {
+        console.log('ABIERTO');
+    };
+    websocket.onclose = function(event) {
+        // The connection was closed
+        console.log('CERRADO');
+    };
+    websocket.onmessage = function(event) {
+        var message = event.data
+        console.log('MESSAGE RECEIVED '+message);
+    };
+    websocket.onerror = function(event) {
+        // There was an error with your WebSocket
+        var message = event.data
+        console.log('MESSAGE ERROR..!! '+message);
+    };
+</script>
+</body>
+</html>

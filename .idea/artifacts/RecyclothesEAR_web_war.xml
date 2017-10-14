@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="RecyclothesEAR-web:war">
+    <output-path>$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-web/target</output-path>
+    <root id="archive" name="RecyclothesEAR-web.war">
+      <element id="artifact" artifact-name="RecyclothesEAR-web:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="324.9609375" prefWidth="392.0" xmlns:fx="http://javafx.com/fxml" fx:controller="filesrepo.MainController">
+  <children>
+    <ListView fx:id="lista" layoutX="24.0" layoutY="55.0" prefHeight="187.0" prefWidth="345.0" />
+    <Label fx:id="textoSoltar" layoutX="24.0" layoutY="244.0" prefHeight="41.0" prefWidth="345.0" text="Suelta el archivo" textFill="#009900" visible="false">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </Label>
+    <Label layoutX="24.0" layoutY="28.0" text="Para copiar, arrastra y suelta el archivo a la lista." />
+  </children>
+</AnchorPane>

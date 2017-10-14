@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="RecyclothesEAR-ear:ear exploded">
+    <output-path>$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-ear/target/RecyclothesEAR-ear</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="RecyclothesEAR-ear/javaeeApplication/JavaEE" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-ear/target/RecyclothesEAR-ear/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-ear/src/main/application" />
+      <element id="archive" name="RecyclothesEAR-web.war">
+        <element id="artifact" artifact-name="RecyclothesEAR-web:war exploded" />
+      </element>
+      <element id="archive" name="RecyclothesEAR-dao.jar">
+        <element id="artifact" artifact-name="RecyclothesEAR-dao:ejb exploded" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/eclipse/persistence/javax.persistence/2.1.1/javax.persistence-2.1.1.jar" output-file-name="javax.persistence.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/eclipse/persistence/eclipselink/2.5.0/eclipselink-2.5.0.jar" output-file-name="eclipselink.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar" output-file-name="commonj.sdo.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar" output-file-name="mysql-connector-java.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar" output-file-name="log4j.jar" />
+        <element id="archive" name="RecyclothesAPP-common.jar">
+          <element id="module-output" name="RecyclothesAPP-common" />
+        </element>
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar" output-file-name="json-simple.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" output-file-name="commons-lang.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>

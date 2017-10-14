@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.recyclothes.fx.controller.RegistroClienteController">
+   <children>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="1000.0" spacing="10.0">
+         <children>
+            <TextField fx:id="textFieldNombres" prefWidth="200.0" promptText="nombres y apellidos" />
+            <TextField fx:id="textFieldCorreo" prefWidth="200.0" promptText="correo" />
+            <TextField fx:id="textFieldTelefono" prefWidth="200.0" promptText="telefono" />
+            <Button fx:id="buttonBuscar" mnemonicParsing="false" prefWidth="150.0" text="Buscar" />
+            <Button fx:id="buttonLimpiar" mnemonicParsing="false" prefWidth="150.0" text="Limpiar" />
+         </children>
+      </HBox>
+      <TableView fx:id="tableViewClientes" layoutX="14.0" layoutY="44.0" prefHeight="200.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableViewReservas" layoutX="14.0" layoutY="255.0" prefHeight="200.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

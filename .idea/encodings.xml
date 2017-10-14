@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ROOT" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-ejbclient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-fx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-nio" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesAPP/RecyclothesAPP-wsocketclient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesDB" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesEAR" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-ear" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-ejb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-web" charset="UTF-8" />
+  </component>
+</project>

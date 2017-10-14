@@ -1,0 +1,15 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+    <persistence-unit name="jpa-example" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>com.recyclothes.dao.entity.Producto</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/web" />
+            <property name="javax.persistence.jdbc.user" value="adminvlRnXQp" />
+            <property name="javax.persistence.jdbc.password" value="3isUfI-lcxI7" />
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+        </properties>
+    </persistence-unit>
+</persistence>

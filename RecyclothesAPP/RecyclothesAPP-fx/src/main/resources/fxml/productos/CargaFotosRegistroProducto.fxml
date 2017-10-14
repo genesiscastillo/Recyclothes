@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.recyclothes.fx.controller.CargaFotoRegistroProductoController">
+   <children>
+      <HBox fx:id="hBox" prefHeight="250.0" prefWidth="1000.0">
+         <children>
+            <VBox prefHeight="250.0" prefWidth="250.0" spacing="3.0">
+               <children>
+                  <ComboBox fx:id="comboBoxCatalogoEnum" prefHeight="30.0" prefWidth="250.0" />
+                  <ComboBox fx:id="comboBoxTallaEnum" prefHeight="30.0" prefWidth="250.0" />
+                  <TextArea fx:id="textAreaDescripcion" prefHeight="120.0" prefWidth="250.0" />
+                  <TextField fx:id="textFieldPrecio" prefHeight="30.0" prefWidth="250.0" />
+                  <Button fx:id="buttonGrabar" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" text="Grabar" />
+               </children>
+            </VBox>
+            <FlowPane fx:id="flowPaneFotos" prefHeight="250.0" prefWidth="750.0" />
+         </children></HBox>
+      <ScrollPane fx:id="scrollPane" layoutX="2.0" layoutY="250.0" prefHeight="400.0" prefWidth="1020.0">
+         <content>
+            <FlowPane fx:id="flowPane" prefHeight="400.0" prefWidth="1020.0" />
+         </content>
+      </ScrollPane>
+      <HBox layoutY="650.0" prefHeight="25.0" prefWidth="1020.0" spacing="150.0">
+         <children>
+            <Button fx:id="buttonCargarFotos" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Cargar Fotos Productos X" />
+            <Button fx:id="buttonPagAnterior" disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Pagina Anterior" />
+            <Button fx:id="buttonPagSiguiente" disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Pagina Siguiente" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

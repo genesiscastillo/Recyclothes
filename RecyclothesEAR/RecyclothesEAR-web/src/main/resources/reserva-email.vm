@@ -1,0 +1,269 @@
+<HTML>
+<BODY>
+<div style="padding:0;max-width:700px;">
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+            <td align="left" style="padding:10px 0 15px 0;">
+                <img border="0" title="Recyclothes" width="139" height="90"
+                     src="www.recyclothes.cl/img/caprichitos2.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" style="border-top:solid 1px #e8e8e8;display:block;"/>
+        </tr>
+        <tr>
+            <td height="15" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td width="40">
+                <img width="32" height="32"
+                     src="www.recyclothes.cl/img/face-happy-32.png">
+            </td>
+            <td style="font-family:Arial;font-size:20px;color:#468847;font-weight:normal;">
+                Hola $nombreCliente
+            </td>
+        </tr>
+        <tr>
+            <td width="40">
+                <img width="32" height="32"
+                     src="www.recyclothes.cl/img/check-32.png">
+            </td>
+            <td style="font-family:Arial;font-size:20px;color:#468847;font-weight:normal;">
+                &iexcl;Gracias por tu reserva&#33;
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td height="10" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td style="font-family:Arial;font-size:18px;color:#333333;padding-bottom:3px;">
+                Codigo Reserva : $idReserva-CodigoReserva
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;line-height:1.4;">
+                &nbsp;
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        #foreach($productoDTO in $productList)
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tbody>
+                    <tr valign="top">
+                        <td style="width:90px;">
+                            <span style="border:1px solid #cccccc;display:block;">
+                                <img src="www.recyclothes.cl/imageServlet?id=$productoDTO.idFotoProducto"
+                                     style="display:block;" width="90" height="90">
+                            </span>
+                        </td>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                <tr>
+                                    <td style="font-family:Arial;font-size:14px;color:#666666;padding:0 20px 6px 15px;line-height:1.4;">
+                                        $productoDTO.descripcion
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family:Arial;font-size:16px;color:#b22c00;padding:0 20px 0 15px;">
+                                        $productoDTO.precioProducto
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        #end
+        <tr>
+            <td height="25" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td style="font-family:Arial;font-size:18px;color:#333333;padding-bottom:3px;">
+                Env&iacute;o
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;line-height:1.4;">
+                Acu&eacute;rdalo con el vendedor.
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td height="25" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td style="font-family:Arial;font-size:18px;color:#333333;">
+                A pagar
+            </td>
+        </tr>
+        <tr>
+            <td height="3" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr style="display:block;padding:5px 0;">
+            <td valign="top" width="120"
+                style="font-family:Arial;font-size:14px;color:#666666;border-top:solid 1px #dddddd;padding:5px 0;">
+                Total:
+            </td>
+            <td valign="top"
+                style="font-family:Arial;font-size:14px;color:#b22c00;border-top:solid 1px #dddddd;padding:5px 0;">
+                &nbsp;&nbsp;$montoTotal
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td height="25" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td style="font-family:Arial;font-size:18px;color:#333333;padding-bottom:3px;">
+                Vendedor
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;padding-bottom:5px;">
+                Vanessa Villanueva
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;padding-bottom:5px;">
+                <a href="mailto:c.vanessavillanueva@gmail.com" style="color:#0637b3;text-decoration:none;" target="_blank">
+                    c.vanessavillanueva@gmail.com</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;padding-bottom:5px;">
+
+                <a style="font-size:14px;color:#0637b3;text-decoration:none;" target="_blank"> 97329097</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td height="25" style="font-size:1px;">
+                <hr style="border-top:dotted 1px #ccc;border-bottom:none;">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td style="font-family:Arial;font-size:18px;color:#333333;font-weight:normal;padding-bottom:3px;line-height:1.4;">
+                &iquest;Y ahora qu&eacute tengo que hacer&#63;
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;padding-bottom:10px;line-height:1.4;">
+                <strong>Contacta al vendedor para pagar</strong> y coordinar la fecha de entrega del productoDTO.
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;line-height:1.4;">
+                Encu&eacute;ntrate en un lugar concurrido y revisa el productoDTO para confirmar que es exactamente lo que
+                compraste. Si es por encomienda, p&iacute;dele un c&oacute;digo de seguimiento para poder acompa&ntilde;ar el env&iacute;o.
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td height="10" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;padding-bottom:10px;line-height:1.4;">
+                Si eliges realizar pagos v&iacute;a Transferencia Bancaria. Contacte con su Vendedor.
+                WhatsApp +95669699669.
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;line-height:1.4;">
+                Cualquier duda escr&iacute;benos desde Ayuda &gt; <a style="color:#0637b3;text-decoration:none;"
+                                                              href="$contactoRecyclothes"
+                                                              target="_blank">Contacto</a>.
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td height="25" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding:0 20px 0 0;">
+        <tbody>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;">
+                Que lo disfrutes
+            </td>
+        </tr>
+        <tr>
+            <td style="font-family:Arial;font-size:14px;color:#666666;">
+                Recyclothes@
+            </td>
+        </tr>
+        <tr>
+            <td height="25" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</BODY>
+</HTML>

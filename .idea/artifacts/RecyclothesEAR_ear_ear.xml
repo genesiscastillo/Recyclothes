@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="RecyclothesEAR-ear:ear">
+    <output-path>$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-ear/target</output-path>
+    <root id="archive" name="RecyclothesEAR-ear.ear">
+      <element id="artifact" artifact-name="RecyclothesEAR-ear:ear exploded" />
+    </root>
+  </artifact>
+</component>

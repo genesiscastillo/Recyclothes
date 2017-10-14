@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.BlogMapper">
+    <resultMap id="Table1Result" type="com.recyclothes.dao.Table1">
+        <result property="column1" column="COLUMN1"/>
+        <result property="column2" column="COLUMN2"/>
+        <result property="column3" column="COLUMN3"/>
+    </resultMap>
+    <select id="selectDate" parameterType="java.util.HashMap" statementType="CALLABLE">
+          {
+            call PROCEDURE1(#{fecha , mode=OUT, jdbcType=NUMERIC}
+                          , #{CURSOR_TABLE1, jdbcType=CURSOR, javaType=java.sql.ResultSet, mode=INOUT, resultMap=Table1Result})
+          }
+    </select>
+
+</mapper>

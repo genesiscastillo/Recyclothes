@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="RecyclothesEAR-ejb:ejb">
+    <output-path>$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-ejb/target</output-path>
+    <root id="archive" name="RecyclothesEAR-ejb.jar">
+      <element id="artifact" artifact-name="RecyclothesEAR-ejb:ejb exploded" />
+    </root>
+  </artifact>
+</component>

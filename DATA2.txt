@@ -1,0 +1,45 @@
+WildFly 10 administrator added.  Please make note of these credentials:
+
+   Username: adminypWiBTH
+   Password: UhYxgrHVQyh-
+
+   run 'rhc port-forward web' to access the web admin area on port 9990.
+
+rhc app-restart web
+
+remve logs
+==========
+usar command :     du -hs logs
+du -h * | sort -rh | head -50
+
+
+========================================================================
+
+MySQL 5.5 database added.  Please make note of these credentials:
+
+       Root User: adminvlRnXQp
+   Root Password: 3isUfI-lcxI7
+   Database Name: web
+
+Connection URL: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
+
+=========================================================================
+
+
+ALTER TABLE `web`.`tb_cliente`
+CHANGE COLUMN `correo` `correo` VARCHAR(255) NOT NULL ,
+CHANGE COLUMN `fechaRegistroCreacion` `fechaRegistroCreacion` DATETIME NOT NULL ,
+ADD COLUMN `telefono` VARCHAR(45) NULL DEFAULT NULL AFTER `fechaUltimaVisita`;
+
+
+
+CREATE TABLE `web`.`tb_acceso` (
+  `id_acceso` INT NOT NULL AUTO_INCREMENT,
+  `id_cliente` INT NULL,
+  `fecha_acceso_in` DATETIME NOT NULL,
+  `fecha_acceso_out` DATETIME NULL,
+  PRIMARY KEY (`id_acceso`));
+
+
+ALTER TABLE `web`.`tb_acceso`
+ADD COLUMN `status` INT NULL AFTER `fecha_acceso_out`;

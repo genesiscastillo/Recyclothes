@@ -1,0 +1,9 @@
+com\recyclothes\ejbclient\ReservaEJB.class
+com\recyclothes\remote\EJBLocator.class
+com\recyclothes\ejbclient\ClienteEJB.class
+com\recyclothes\ejbclient\FotoProductoEJB.class
+com\recyclothes\ejbclient\DetalleReservaEJB.class
+com\recyclothes\remote\RemoteEJBClient.class
+com\recyclothes\ejbclient\ActualizacionAccesoEJB.class
+com\recyclothes\remote\EJBLocator$1.class
+com\recyclothes\ejbclient\ProductosEJB.class

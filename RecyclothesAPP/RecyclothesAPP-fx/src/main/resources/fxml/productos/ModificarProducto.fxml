@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.recyclothes.fx.controller.ModificarProductoVariosController">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="200.0" spacing="40.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="comboBoxCatalogoEnum" prefHeight="30.0" prefWidth="250.0" />
+            <ComboBox fx:id="comboBoxTallaEnum" prefHeight="30.0" prefWidth="250.0" />
+            <ComboBox fx:id="comboBoxEstadoProductoEnum" prefHeight="30.0" prefWidth="250.0" />
+            <Label fx:id="labelTotalPrendas" text="0">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane fx:id="scrollPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="1024.0" />
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

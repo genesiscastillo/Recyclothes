@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="RecyclothesEAR-dao:ejb exploded">
+    <output-path>$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-dao/target/RecyclothesEAR-dao</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="RecyclothesEAR-dao/ejb/EJB" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-dao/target/RecyclothesEAR-dao/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="RecyclothesEAR-dao" />
+    </root>
+  </artifact>
+</component>

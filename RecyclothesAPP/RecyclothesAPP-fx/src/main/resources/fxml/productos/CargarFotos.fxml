@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.recyclothes.fx.controller.CargaFotosController">
+   <children>
+      <Button fx:id="buttonOpenFile" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" text="Cargar Fotos" />
+      <TableView fx:id="tableView" layoutX="7.0" layoutY="50.0" prefHeight="625.0" prefWidth="600.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imageView" fitHeight="400.0" fitWidth="400.0" layoutX="613.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="buttonRevisar" layoutX="357.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" text="Revisar Fotos Cargados" />
+      <Button fx:id="buttonEliminar" layoutX="900.0" layoutY="450.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Elliminar Foto" visible="false" />
+      <Button fx:id="buttonLimpiarPantalla" layoutX="613.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Limpiar Tabla" visible="false" />
+      <Button fx:id="buttonPagAnterior" layoutX="613.0" layoutY="554.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Pagina Anterior" visible="false" />
+      <Button fx:id="buttonPagSiguiente" layoutX="613.0" layoutY="583.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Pagina Siguiente" visible="false" />
+   </children>
+</AnchorPane>

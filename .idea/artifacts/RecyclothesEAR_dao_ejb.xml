@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="RecyclothesEAR-dao:ejb">
+    <output-path>$PROJECT_DIR$/RecyclothesEAR/RecyclothesEAR-dao/target</output-path>
+    <root id="archive" name="RecyclothesEAR-dao.jar">
+      <element id="artifact" artifact-name="RecyclothesEAR-dao:ejb exploded" />
+    </root>
+  </artifact>
+</component>

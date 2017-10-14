@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="RecyclothesAPP-common" />
+        <module name="RecyclothesAPP-dao" />
+        <module name="RecyclothesAPP-fx" />
+        <module name="RecyclothesAPP-nio" />
+        <module name="RecyclothesAPP-wsocketclient" />
+        <module name="RecyclothesDB" />
+        <module name="RecyclothesEAR-dao" />
+        <module name="RecyclothesEAR-ear" />
+        <module name="RecyclothesEAR-web" />
+        <module name="ROOT" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Recyclothes" target="1.5" />
+      <module name="RecyclothesAPP" target="1.5" />
+      <module name="RecyclothesAPP-common" target="1.5" />
+      <module name="RecyclothesAPP-dao" target="1.5" />
+      <module name="RecyclothesAPP-ejbclient" target="1.5" />
+      <module name="RecyclothesAPP-fx" target="1.7" />
+      <module name="RecyclothesAPP-nio" target="1.7" />
+      <module name="RecyclothesAPP-wsocketclient" target="1.7" />
+      <module name="RecyclothesDB" target="1.5" />
+      <module name="RecyclothesEAR" target="1.8" />
+      <module name="RecyclothesEAR-dao" target="1.8" />
+      <module name="RecyclothesEAR-ear" target="1.8" />
+      <module name="RecyclothesEAR-ejb" target="1.7" />
+      <module name="RecyclothesEAR-web" target="1.8" />
+      <module name="ROOT" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

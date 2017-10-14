@@ -1,0 +1,2 @@
+JPA
+* http://stackoverflow.com/questions/18069449/criteriabuilder-and-criteriabuilder-or-how-to

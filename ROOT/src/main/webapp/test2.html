@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/ico/favicon-16x16.png">
+    <link rel="manifest" href="images/ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<br/>
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="shop-menu pull-right">
+                <ul class="nav navbar-nav">
+                    <div id="id-menu-principal">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/price-range.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootbox.min.js"></script>
+<script src="js/bootstrap-combobox.js"></script>
+<script type="application/javascript">
+    function getComponentI( idli , fafa, nombreOpcion ){
+        var idliopcion = $('<li>',{
+            id : idli
+        });
+        var ahref = $('<a>',{
+            href : '#',
+            text : nombreOpcion,
+        });
+
+        var iComp = $('<i>', {
+            class : fafa
+        });
+        ahref.prepend( iComp );
+        idliopcion.append(ahref);
+        return idliopcion;
+    }
+    var opcionIrCatalogo    = getComponentI("idliCatalogo" , "fa fa-search" , "Ir al Catalogo" );
+    var opcionMisPedidos    = getComponentI("idliCart", "fa fa-shopping-cart","Mis Pedidos");
+    var opcionCerrarSession = getComponentI("idliLogout","fa fa-power-off","Cerrar Sessión");
+    var opcionIniciarSession= getComponentI("idliLogin","fa fa-lock","Iniciar Sessión");
+
+    opcionMisPedidos.bind('click',function(){
+        $('#id-menu-principal').append(opcionIrCatalogo);
+        this.remove();
+    })
+    opcionIrCatalogo.bind('click', function(){
+        $('#id-menu-principal').append(opcionMisPedidos);
+        this.remove();
+    });
+    opcionIniciarSession.bind('click', function()   {
+        //$('#id-menu-principal').append(opcionCerrarSession);
+        //$('#id-menu-principal').append(opcionMisPedidos);
+        $('#id-menu-principal').append(opcionIrCatalogo);
+        this.remove();
+    });
+    opcionCerrarSession.bind('click',function() {
+        location.reload();
+    });
+    $(document).ready(function()    {
+        $('#id-menu-principal').append(opcionIniciarSession);
+    });
+</script>
+</body>
+</html>

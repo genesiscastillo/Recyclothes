@@ -1,0 +1,1 @@
+java -cp D:\proyectos\Recyclothes\RecyclothesAPP\RecyclothesAPP-fx\target\RecyclothesAPP-fx-1.0-SNAPSHOT.jar com.recyclothes.fx.main.MainLogin
